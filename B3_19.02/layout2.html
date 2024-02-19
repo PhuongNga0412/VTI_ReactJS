@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>L2</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            .row {
+                display: flex;
+                gap: 20px;
+            }
+
+            .row.top {
+                height: 35vh;
+            }
+            .row.bottom {
+                height: 65vh;
+            }
+
+            .col {
+                flex: 1;
+                background-color: aqua;
+                margin-bottom: 20px;
+                padding: 10px;
+            }
+
+            .right {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .box {
+                flex: 1;
+                /* margin: 10px; */
+            }
+
+            .box1 {
+                background-color: blueviolet;
+            }
+
+            .box.box2 {
+                display: flex;
+                gap: 10px;
+            }
+
+            .item {
+                flex: 1;
+                background-color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="row top">
+            <div class="col"></div>
+            <div class="col"></div>
+        </div>
+        <div class="row bottom">
+            <div class="col"></div>
+            <div class="col right">
+                <div class="box box1"></div>
+                <div class="box box2">
+                    <div class="item"></div>
+                    <div class="item"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>L1</title>
+        <style>
+            .row1,
+            .row2 {
+                display: flex;
+                gap: 10px;
+            }
+
+            .row1 .col {
+                flex: 1;
+                height: 30vh;
+                margin-bottom: 10px;
+                background-color: brown;
+            }
+
+            .row2 .col:first-child {
+                flex: 1;
+                height: 50vh;
+                background-color: aqua;
+            }
+
+            .row2 .col:last-child {
+                flex: 3;
+                height: 50vh;
+                margin-bottom: 10px;
+                background-color: darksalmon;
+            }
+
+            .row3 {
+                height: 10vh;
+                background-color: yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="row1">
+            <div class="col"></div>
+            <div class="col"></div>
+        </div>
+        <div class="row2">
+            <div class="col"></div>
+            <div class="col"></div>
+        </div>
+        <div class="row3"></div>
+    </body>
+</html>

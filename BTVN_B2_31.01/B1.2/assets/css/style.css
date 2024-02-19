@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 10px;
+}
+
+h1 {
+    font-size: 46px;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.cv {
+    margin: auto;
+    width: 450px;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.head .contact {
+    flex: 1;
+}
+
+.head .contact p:first-child {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.head .prof {
+    flex: 2;
+}
+
+.head .profile {
+    background-color: #ededed;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.separate {
+    height: 1px;
+    background-color: #efefef;
+    margin: 10px 0;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.content .his {
+    flex: 1.5;
+}
+
+.content .column {
+    flex: 1;
+}
+
+.his .highlight {
+    display: inline-block;
+    background-color: #232323;
+    color: #fff;
+    padding: 3px 5px;
+    margin-bottom: 5px;
+}
+
+.his .box {
+    margin-bottom: 10px;
+}
+
+.his .time {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.his ul {
+    margin-top: 5px;
+}
+
+.column .box {
+    background-color: #ededed;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
