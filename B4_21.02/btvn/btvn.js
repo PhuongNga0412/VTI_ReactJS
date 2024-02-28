@@ -363,3 +363,4 @@ console.log(totalBill);
 // 7. kiểm tra xem có phải tất cả user đều có bill > 400
 
 // 8. hiển thị top 3 sản phẩm đc mua nhiều nhất
+// 9. tìm danh sách các sản phẩm được mua bởi user 2 và 3

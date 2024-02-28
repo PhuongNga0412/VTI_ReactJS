@@ -1,0 +1,101 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <p id="intro">Hello World</p>
+        <div class="container">container 1</div>
+        <div class="container">container 2</div>
+        <div class="container">container 3</div>
+        <script>
+            const intro = document.getElementById("intro");
+            // nếu trong document (html element) mà không có 'intro' ==> intro = null
+            // nếu có ==> intro = html element
+            console.log(document); // html
+            // console.log("head: ", document.head);
+            // console.log("head: ", document.body);
+            console.log(intro);
+            const containerList = document.getElementsByClassName("container");
+            console.log(containerList);
+
+            const containerDiv = document.querySelector(".container"); // class container gần nhất từ trên xuống
+            console.log(containerDiv);
+        </script>
+    </body>
+</html> -->
+
+<!-- --------------------------------------------------------------- -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="parent">
+            <p class="child">child 1</p>
+            <p class="child">child 2</p>
+            <p class="child">child 3</p>
+            <p class="child">child 4</p>
+            <p class="child">child 5</p>
+            <p class="child">child 6</p>
+            <p class="child">child 7</p>
+            <p class="child">child 8</p>
+            <p class="child">child 9</p>
+            <p class="child">child 10</p>
+        </div>
+        <script>
+            // c1 - dung getElementsByClassName
+            const children = document.getElementsByClassName("child");
+
+            // c2 - dung querySelector
+            // const firstChild = document.querySelector(".child");
+            // console.log(firstChild);
+            // const parentDiv = firstChild.parentElement;
+
+            const container = document.querySelector(".parent");
+            const containerChildren = container.children;
+            console.log(containerChildren);
+            const firstChild = container.firstElementChild;
+            const lastChild = container.lastElementChild;
+            console.log("firstChild: ", firstChild);
+            console.log("firstChild: ", lastChild);
+
+            const secondChild = firstChild.nextElementSibling;
+            const thirdChild = lastChild.previousElementSibling;
+            console.log(secondChild, thirdChild);
+        </script>
+    </body>
+</html> -->
+
+<!-- --------------------------------------------------------------- -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="container">
+            <p id="intro" class="child">Hello World</p>
+            <script>
+                // document.createElement
+                const containerDiv = document.createElement("div");
+                // how to add an attribute to a HTML element
+                containerDiv.setAttribute("class", "container");
+                const introParam = document.createElement("p");
+                console.log(containerDiv);
+                console.log(introParam);
+                // [html element].appendChild()
+                document.body.appendChild(containerDiv);
+            </script>
+        </div>
+    </body>
+</html>
