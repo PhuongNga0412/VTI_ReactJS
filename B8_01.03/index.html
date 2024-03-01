@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div id="first-box" class="sub-container">
+                <div class="box-item">1</div>
+                <div class="box-item">2</div>
+            </div>
+            <div id="second-box" class="sub-container">
+                <div class="box-item">3</div>
+                <div class="box-item">4</div>
+            </div>
+        </div>
+
+        <script>
+            // 1. Đổi màu box-item1
+            // C1:
+            // const item1 = document.querySelector(".box-item"); // class container gần nhất từ trên xuống
+            // item1.style.background = "yellow";
+            // C2:
+            // const subContainer = document.querySelector(".sub-container");
+            // const item1 = subContainer.firstElementChild;
+            // item1.style.background = "yellow";
+            // C3:
+            // const firstBox = document.getElementById("first-box");
+            // // const item1 = firstBox.firstElementChild;
+            // const item1 = firstBox.children[0];
+            // item1.style.background = "yellow";
+            // C4:
+            // const subContainerList =
+            //     document.getElementsByClassName("sub-container");
+            // const firstBox = subContainerList[0];
+            // const item1 = firstBox.firstElementChild;
+            // item1.style.background = "yellow";
+
+            const firstBox = document.querySelector("#first-box");
+            const secondItem = firstBox.lastElementChild;
+
+            // ---------------------------------------------------------------
+
+            // 2. Thêm h1 'Hello World' vào box-item2
+            const introHeading = document.createElement("h1");
+            introHeading.innerText = "Hello World";
+            secondItem.appendChild(introHeading);
+            // console.log(secondItem.innerHTML);
+        </script>
+    </body>
+</html>
