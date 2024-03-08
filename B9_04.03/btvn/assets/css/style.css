@@ -1,5 +1,10 @@
+.container {
+    display: flex;
+}
 .content {
     display: flex;
+    flex-wrap: wrap;
+    width: 90%;
 }
 
 .menu {
@@ -8,12 +13,7 @@
 }
 
 .modal {
-    /* display: flex;
-    flex-wrap: wrap;
-    width: 90%;
-    margin: 0 20px;
-    gap: 10px; */
-    /* display: block; */
+    display: none;
     position: fixed;
     z-index: 1;
     left: 0;
@@ -23,16 +23,13 @@
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.4);
 }
-
 .modal-content {
-    /* background-color: aqua;
-    width: 100px; */
     background-color: #fefefe;
     margin: 10% auto;
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
-    max-width: 500px;
+    max-width: 500px; /* Added to limit maximum width of the modal */
 }
 
 .card {
@@ -46,11 +43,13 @@
 .icon {
     width: 15px;
 }
+
 .category {
     display: flex;
     width: 100px;
     margin: 15px 0;
 }
+
 ul {
     padding: 0;
 }
