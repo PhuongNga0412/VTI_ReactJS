@@ -1,0 +1,15 @@
+.product-card {
+    border: 1px solid red;
+}
+
+.product-list-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.product-form {
+    display: none;
+}
+.product-form-action {
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="content">
+            <div class="menu">
+                <ul>
+                    <div class="category">
+                        <img class="icon" src="./assets/img/add.png" />
+                        <li onclick="handlePost()">Posts</li>
+                    </div>
+                    <div class="category">
+                        <img class="icon" src="./assets/img/comment.png" />
+                        <li onclick="handleComment()">Comments</li>
+                    </div>
+                    <div class="category">
+                        <img
+                            class="icon"
+                            src="./assets/img/image-gallery.png"
+                        />
+                        <li onclick="handleAlbum()">Albumns</li>
+                    </div>
+                    <div class="category">
+                        <img class="icon" src="./assets/img/camera.png" />
+                        <li onclick="handlePhoto()">Photos</li>
+                    </div>
+                    <div class="category">
+                        <img class="icon" src="./assets/img/checklist.png" />
+                        <li onclick="handleTodo()">Todos</li>
+                    </div>
+                    <div class="category">
+                        <img class="icon" src="./assets/img/setting.png" />
+                        <li onclick="handleUser()">Users</li>
+                    </div>
+                </ul>
+            </div>
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal()"></span>
+                    <div id="userInfo"></div>
+                </div>
+            </div>
+        </div>
+        <script src="./main.js"></script>
+    </body>
+</html>
