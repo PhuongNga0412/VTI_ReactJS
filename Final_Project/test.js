@@ -53,7 +53,7 @@ function generateUserCard(userInfo) {
                 userInfo
             )})'>Edit</button>
             <button onclick='handleDeleteUser(${JSON.stringify(
-                userInfo
+                userInfo.id
             )})'>Delete</button>
         </div>
     `;
@@ -388,7 +388,7 @@ const handleDeleteProduct = async (productId) => {
     const isDeleted = await deleteProduct(productId);
 
     if (!isDeleted) {
-        const productListDiv = document.querySelector(".product-list");
+        // const productListDiv = document.querySelector(".product-list");
         const errorStatus = document.createElement("h2");
         errorStatus.innerText = "Create Failed";
         errorStatus.style.color = "red";
