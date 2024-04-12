@@ -1,0 +1,8 @@
+react, angular, vue,...: FE frontend & libraries 
+
+- js library to built web UI
+-component:
++ trong react: class / function ---> function
+
++ component:
+- jsx: cu phap

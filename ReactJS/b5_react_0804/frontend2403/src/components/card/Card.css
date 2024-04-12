@@ -1,0 +1,14 @@
+.card-container {
+    display: flex;
+    width: 80%;
+    margin: 50px auto;
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+    h1,
+    p {
+        margin: 0;
+    }
+}

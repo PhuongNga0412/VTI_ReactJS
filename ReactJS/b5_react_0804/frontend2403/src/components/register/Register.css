@@ -1,0 +1,20 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    /* margin: 50px auto; */
+    padding: 10px;
+    border: 2px solid #ccc;
+    h3 {
+        text-align: center;
+    }
+    .form__btn {
+        margin: 20px auto 0;
+    }
+    .txt {
+        color: #7b7b7b;
+        font-size: 14px;
+        font-weight: 500;
+        margin-top: 7px;
+    }
+}
